@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <p>Calculator</p>
+      <p>Calculator.app</p>
       <p>{inputs}</p>
       <Keypad inputsetter={setInputs} />
     </div>
