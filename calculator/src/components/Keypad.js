@@ -28,12 +28,11 @@ const Keypad = (props) => {
             cssclass={nums.includes(key) ? 'number' : 'action'}
             key={index}
             value={key}
-            clickhandler={props.inputsetter}
+            clickhandler={[props.calculate, props.inputsetter]}
           ></Button>
         );
       })}
     </>
   );
 };
-
 export default Keypad;
