@@ -14,7 +14,7 @@ const Keypad = (props) => {
     '8',
     '9',
     '/',
-    '<',
+    'C',
     '0',
     '=',
     '*',
@@ -28,7 +28,7 @@ const Keypad = (props) => {
             cssclass={nums.includes(key) ? 'number' : 'action'}
             key={index}
             value={key}
-            inputsetter={props.inputsetter}
+            clickhandler={props.inputsetter}
           ></Button>
         );
       })}
