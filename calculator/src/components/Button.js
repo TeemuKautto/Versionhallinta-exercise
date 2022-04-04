@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Button = (props) => {
-  const clickHandler = () => {
-    props.inputsetter((prevInputs) => [...prevInputs, props.value]);
-  };
+
+  const {cssclass, value, clickhandler} = props
+
   return (
-    <button className={props.cssclass} onClick={clickHandler}>
-      {props.value}
+    <button className={cssclass} onClick={() => clickhandler(value)}>
+      {value}
     </button>
   );
 };
