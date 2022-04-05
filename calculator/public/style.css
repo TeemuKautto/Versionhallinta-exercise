@@ -25,6 +25,7 @@ p + p {
   padding: 0.5em 1em;
   box-sizing: border-box;
   border: mediumspringgreen solid 1px;
+  min-height: 2.5em;
 }
 button {
   background-color: #111;
